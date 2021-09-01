@@ -1,6 +1,7 @@
 $black: #000;
 $white: rgb(233, 229, 229);
 
+@import "basic.scss";
 body {
     background-color: $black;
     color: $white;
