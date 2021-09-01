@@ -1,17 +1,10 @@
 import "./App.css";
-import "./scss/app.scss"
+import "./scss/app.scss";
+import List from "./List"
 
 function App() {
   return (
-    <div className="container">
-      <h1>
-        welcome to my world
-      </h1>
-      <span>
-         hello my friend
-      </span>
-      
-    </div>
+    <List />
     
   )
 }
