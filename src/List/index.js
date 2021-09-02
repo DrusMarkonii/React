@@ -50,17 +50,22 @@ function ListNotGoodButNotBad() {
 function List () {
     return (
         <div>
-            <h2>
-                Информация о сотрудниках:
+             <h2>
+                 Информация о сотрудниках:
             </h2>
-            {people.map(function(item, index){
-                return (
-                    <PersonDescription
-                        person={item}
-                    />
-                )
-            })}
+            {
+                people.map((item, index)=>{
+                    return (
+                        <PersonDescription 
+                            person={item}
+                        />
+                    )
+                })
+            }
         </div>
+       
+        
+
     )
 }
 
