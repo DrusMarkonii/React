@@ -5,19 +5,19 @@ function App() {
     <div className="container ">
       <ul className="user-list">
         <li className="user-item">
-          <UserInfo 
-            userName="Вова" 
-            userGender="муж" 
-            userAge={27} 
-            yearsWorked={1} 
+          <UserInfo
+            userName="Вова"
+            userGender="муж"
+            userAge={27}
+            yearsWorked={1}
           />
         </li>
         <li className="user-item">
-          <UserInfo 
-            userName="Иван" 
-            userGender="муж" 
-            userAge={21} 
-            yearsWorked={2} 
+          <UserInfo
+            userName="Иван"
+            userGender="муж"
+            userAge={21}
+            yearsWorked={2}
           />
         </li>
         <li className="user-item">
@@ -29,11 +29,6 @@ function App() {
           />
         </li>
       </ul>
-      
-      
-      
-      
-      
     </div>
   );
 }
