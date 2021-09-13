@@ -5,8 +5,7 @@ $white: rgb(22, 20, 20);
 body {
     background-color: $black;
     color: $white;
-    span{
-        background-color: rgb(67, 90, 113);
-        text-transform: uppercase;
-    }
+   div{
+       margin-left: 20px;
+   }
 }

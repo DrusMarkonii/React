@@ -1,22 +1,54 @@
 import "./App.css";
 import "./scss/app.scss";
-import List from "./List"
+import TaskDescription from "./List/task-description"
+
+
+
+const tasks = [
+  {   id: 1,
+      taskName: 'Cходить в магазин',
+      isImportant: true
+  },
+  {
+      id: 2,
+      taskName: 'Посмотреть фильм',
+      isImportant: false
+  },
+  {
+      id: 3,
+      taskName: 'Сходить на рыбалку',
+      isImportant: false
+  },
+  {
+      id: 4,
+      taskName: 'Помыть посуду',
+      isImportant: true
+  }
+]
+
 
 function App() {
   const btnClick = (event) => {
-    alert("И тебе привет!!!!")
+    alert("Спасибо, что нажал!!!!")
   }
 
   return (
     <div>
-      <List />
+      <input type="text" />
+      {tasks.map((item, index)=> {
+        return (
+          <TaskDescription 
+            user={item}
+          />
+        )
+      })}
       <button 
         className="button"
         type="btn"
         onClick= {btnClick}
         // disabled
       >
-        Привет
+        Жми
       </button>
     </div>
     

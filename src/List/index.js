@@ -27,35 +27,10 @@ const people = [
     }
 ]
 
-// function ListNotGoodButNotBad() {
-//     let list = []
-//     for(let i = 0; i < people.length; i++){
-//         list.push(
-//             <PersonDescription 
-//                 person={people[i]}
-//             />
-//         )
-//     }
-//     const heading = (
-//         <h2>
-//         Информация о сотрудниках:
-//         </h2>
-//     )
-        
-//        return (
-//        <div>
-//             {heading}
-//             {list}
-//        </div>
-//     )
-// }
-
-
-
 function List () {
     return (
         <div>
-             <h2>
+            <h2>
                  Информация о сотрудниках:
             </h2>
             {people.map((item, index)=>{
