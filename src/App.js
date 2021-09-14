@@ -23,7 +23,12 @@ const tasks = [
       id: 4,
       taskName: 'Помыть посуду',
       isImportant: true
-  }
+  },
+  {
+    id: 5,
+    taskName: 'Прочитать книгу',
+    isImportant: true
+}
 ]
 
 
