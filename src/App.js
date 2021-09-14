@@ -1,51 +1,63 @@
 import "./App.css";
+import "./scss/app.scss";
+import TaskDescription from "./List/task-description"
+
+
+
+const tasks = [
+  {   id: 1,
+      taskName: 'Cходить в магазин',
+      isImportant: true
+  },
+  {
+      id: 2,
+      taskName: 'Посмотреть фильм',
+      isImportant: false
+  },
+  {
+      id: 3,
+      taskName: 'Сходить на рыбалку',
+      isImportant: false
+  },
+  {
+      id: 4,
+      taskName: 'Помыть посуду',
+      isImportant: true
+  }
+]
+
 
 function App() {
-  return (
-    <div className="container ">
-      <ul className="user-list">
-        <li className="user-item">
-          <UserInfo
-            userName="Вова"
-            userGender="муж"
-            userAge={27}
-            yearsWorked={1}
-          />
-        </li>
-        <li className="user-item">
-          <UserInfo
-            userName="Иван"
-            userGender="муж"
-            userAge={21}
-            yearsWorked={2}
-          />
-        </li>
-        <li className="user-item">
-          <UserInfo
-            userName="Ольга"
-            userGender="жен"
-            userAge={37}
-            yearsWorked={3}
-          />
-        </li>
-      </ul>
-    </div>
-  );
-}
 
-function UserInfo(props) {
-  console.log(props);
+  const btnClick = (event) => {
+    alert("Спасибо, что нажал!!!!")
+  }
+
+
   return (
     <div>
-      Имя: {props.userName} <br />
-      Пол: {props.userGender} <br />
-      Возраст: {props.userAge} <br />
-      Работает: {props.yearsWorked} <br />
-      ___________________
-      <br />
-      Зарплата: {props.yearsWorked * 10}
+      <input type="text" />
+      {tasks.map((item, index)=> {
+        return (
+          <TaskDescription 
+            user={item}
+          />
+        )
+      })}
+      <button 
+        className="button"
+        type="btn"
+        onClick= {btnClick}
+        // disabled
+      >
+        Жми
+      </button>
     </div>
-  );
+    
+    
+  )
 }
+    
+
 
 export default App;

@@ -1,0 +1,11 @@
+$black: rgb(224, 222, 222);
+$white: rgb(22, 20, 20);
+
+@import "basic.scss";
+body {
+    background-color: $black;
+    color: $white;
+   div{
+       margin-left: 20px;
+   }
+}
